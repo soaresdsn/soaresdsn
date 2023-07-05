@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoaresDSN - Designer de Flyers Esportivos</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+      animation: fade-in 1s;
+    }
+
+    section {
+      margin-bottom: 40px;
+      animation: fade-in 1s;
+    }
+
+    h1, h2 {
+      color: rgb(0, 0, 0);
+    }
+
+    footer {
+      background-color: rgb(0, 0, 0);
+      padding: 20px;
+      text-align: center;
+      animation: fade-in 1s;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      animation: fade-in 1s;
+    }
+
+    .contact-button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .whatsapp-button {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .instagram-button {
+      background: linear-gradient(135deg, #E1306C, #8A3AB9);
+    }
+
+    /* Estilos para janela flutuante de boas-vindas */
+    .welcome-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: black;
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 999;
+      border: 2px solid rgb(255, 255, 255);
+      animation: fade-in 1s;
+    }
+
+    /* Estilos responsivos */
+    @media only screen and (max-width: 600px) {
+      .welcome-popup {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+
+    /* Animação fade-in */
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="apresentacao">
+      <h1>SoaresDSN - Designer de Flyers Esportivos</h1>
+      <p>Bem-vindo ao site do SoaresDSN, um designer especializado em flyers esportivos modernos e criativos.</p>
+      <p>Eu trago soluções visuais impactantes para promover eventos esportivos, torneios, academias, equipes e muito mais.</p>
+      <p>Meu objetivo é criar flyers que atraiam a atenção do público-alvo e transmitam a mensagem desejada de forma eficaz.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Informações de Contato</h2>
+      <p>Entre em contato comigo para solicitar um orçamento:</p>
+      </ul>
+      <div class="contact-buttons">
+        <a class="contact-button whatsapp-button" href="https://api.whatsapp.com/send/?phone=5583998400965&text&type=phone_number&app_absent=0" style="text-decoration:none">Fale Conosco no Whatsapp</a>
+        <a class="contact-button instagram-button" href="https://www.instagram.com/soaresdsn/" style="text-decoration:none">Fale Conosco no Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="color: rgb(255, 255, 255);">&copy; 2023 SoaresDSN - Designer de Flyers Esportivos. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Janela flutuante de boas-vindas -->
+  <div class="welcome-popup">
+    <h3>🏆 Bem-vindo ao mundo das Artes Esportivas de Futebol!</h3>
+    <button onclick="closeWelcomePopup()">Continuar</button>
+  </div>
+
+  <script>
+    function closeWelcomePopup() {
+      document.querySelector('.welcome-popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
